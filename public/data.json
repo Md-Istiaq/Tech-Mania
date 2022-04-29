@@ -1,0 +1,102 @@
+[
+    {
+        "id":1,
+        "name":"Apple MacBook Air 13.3-Inch",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/space-gray/13-inch/macbook-air-01-500x500.jpg",
+        "price":1299,
+        "description":"The extremely thin and light MacBook Air is now stronger and better than ever. It has an eye-catching Retina display, a new and elegant keyboard, Touch ID, a processor with up to double performance, faster image processing, and double storage capacity. The sleek design of the wedge-shaped side is made of 100% recycled aluminum metal, making it the most environmentally friendly Mac ever.The 2560 x 1600 resolution brings over 4 million pixels, and the results are naturally stunning.",
+        "quantity":120,
+        "supplier":"shahed"
+
+    },
+    {
+        "id":2,
+        "name":"Samsung Galaxy Book Pro 360 ",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/samsung/galaxy-book-pro-360/galaxy-book-pro-360-003-500x500.jpg",
+        "price":999,
+        "description":"The Samsung Galaxy Book Pro 360 13.3 Touch Laptop comes with a brilliant Super AMOLED touch screen and the latest Intel Core i7-1165G7 Processor (12M Cache, 2.80 GHz up to 4.70 GHz) with Intel Iris Xe Graphics and a true-to-life, accurate and vibrant 13.3” Super AMOLED touch screen that has a 120 % Colour Volume (DCI-P3). Integrated AKG and Dolby Atmos sound for a truly immersive cinematic experience.",
+        "quantity":140,
+        "supplier":"wasim"
+
+    },
+    {
+        "id":3,
+        "name":"Dell Inspiron 15 3511 Core i5",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/dell/inspiron-15-3511/inspiron-15-3511-07-500x500.jpg",
+        "price":599,
+        "description":"Dell Inspiron 15 3511 Laptop comes with Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz) with NVIDIA GeForce MX350 with 2GB GDDR5 Graphics. From this laptop you will get the best combination of Windows features you know. This Dell Inspiron 15 3511 comes with 8GB DDR4 3200MHz RAM, 512GB SSD with Windows 10 Home Operating System. This Dell Inspiron 15 3511 Laptop featured with 3-Cell Battery, 41WHr (Integrated). ",
+        "quantity":155,
+        "supplier":"Saif"
+
+    },
+    {
+        "id":4,
+        "name":"HP ENVY x360 Convert 13-ay1678AU",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/envy-x360-convert-13-ay1678au/envy-x360-convert-13-ay1678au-01-500x500.jpg",
+        "price":799,
+        "description":"The HP ENVY x360 Convert 13-ay1678AU Laptop with AMD Ryzen 5 5600U (3MB L2, 16MB L3 Cache, 2.3GHz up to 4.2GHz) and  8GB 3200mhz DDR4 RAM onboard. It has a 512 GB PCIe NVMe M.2 SSD for storage option. This laptop is integrated with AMD Radeon Graphics and has a 13.3 diagonal, FHD (1920 x 1080), multitouch-enabled, IPS, edge-to-edge glass, micro-edge, BrightView, Corning Gorilla Glass NBT, 1000 nits, 72% NTSC, HP Sure View integrated privacy screen.",
+        "quantity":115,
+        "supplier":"Atiq"
+
+    },
+    {
+        "id":5,
+        "name":"Lenovo IdeaPad Slim 3i Celeron N4020",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/slim-3i/slim-3i-001-500x500.jpg",
+        "price":899,
+        "description":"The Lenovo IdeaPad Slim 3i Laptop comes with Intel Celeron N4020 Processor (4M Cache,1.10 GHz up to 2.80 GHz), 4GB DDR4 2400Mhz RAM, 1TB 5400rpm HDD, Intel UHD Graphics 600, and Windows 10 Home operating system. This laptop is also featured with a 2 Cell Li-Polymer battery, Full-size English (US) keyboard, 720p HD Webcam with Privacy Shutter, an SD card reader. Here, WiFi 2 x 2, 1 x 1 AC and Bluetooth Version 5.0 Network & Wireless Connectivity are available.",
+        "quantity":90,
+        "supplier":"Alvee"
+
+    },
+    {
+        "id":6,
+        "name":"Microsoft Surface Pro 8",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/microsoft/surface-pro-8/surface-pro-8-030-500x500.jpg",
+        "price":599,
+        "description":"Microsoft Surface Pro 8 comes with Intel Core i7-1185G7 (12M Cache, 3.00 GHz up to 4.80 GHz) with Intel Iris Xe Graphics. This Surface featured with Wi-Fi options with storage 1TB SSD and above built on the Intel Evo platform. This Surface Pro 8 comes with the high-resolution 13” PixelSense touch display with up to 120Hz refresh rate is our most advanced Pro display. Touch and pen are more responsive. You can Unlock more value with chip-to-cloud security and modern management.",
+        "quantity":87,
+        "supplier":"Sajid"
+
+    },
+    {
+        "id":7,
+        "name":"Razer Blade 14 Ryzen 9 5900HX RTX3080",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-14/blade-14-10-500x500.jpg",
+        "price":1199,
+        "description":"Razer Laptop has finally brought a laptop that is truly is made for gamers. The design to the intricate choice of components has made this laptop be the number one choice for any gamer. From sleek design to battery life this is the best portable gaming laptop in its generation. Nothing can compare to the raw performance that this laptop provides. Razer Blade 14 Laptop powered by AMD Ryzen 9 5900HX Processor (8 Cores, 16 Threads, 3.3GHz up to 4.6GH) with NVIDIA GeForce Graphics.",
+        "quantity":127,
+        "supplier":"Tanvir"
+
+    },
+    {
+        "id":8,
+        "name":"ASUS VivoBook 15 X515EA ",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15-x515ea/vivobook-15-x515ea-05-500x500.jpg",
+        "price":1099,
+        "description":"The ASUS VivoBook 15 X515EA FHD Laptop comes with Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz) and 8GB DDR4 3200MHz SDRAM onboard. It features a 512GB PCI-E G3 SSD. It is integrated with Intel UHD Graphics. It has a 15.6-inch, FHD (1920 x 1080) 16:9, Anti-glare display, LED Backlit, 250nits, NTSC: 45%, Screen-to-body ratio: 83 % Display.It has been designed with 1x USB 3.2 Gen 1 Type-A, 1x USB 3.2 Gen 1 Type-C, 2x USB 2.0 Type-A, 1x HDMI 1.4, 1x 3.5mm Combo Audio Jack, 1x DC-in, and a Micro SD card reader.",
+        "quantity":137,
+        "supplier":"Fahim"
+
+    },
+    {
+        "id":9,
+        "name":"Huawei Matebook X Pro",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/huawei/matebook-x-pro/matebook-x-pro-01-500x500.jpg",
+        "price":1149,
+        "description":"This laptop is featured with Size: 13.9 inches, LTPS, Screen-to-body ratio: 91%, Resolution: 3000 x 2000, 260 PPI, Colour: 100% sRGB colour gamut (Typical), Contrast ratio: 1500:1, Maximum, brightness: 450 nits (Typical), Light sensorm, Viewing angle: 178 degrees, Aspect ratio: 3:2 and 10-point multi-touch sensitive screen with finger gesture screenshot, Full-size backlit chiclet keyboard, Fingerprint power button, Touchpad with multi-touch.",
+        "quantity":67,
+        "supplier":"Jeshan"
+
+    },
+    {
+        "id":10,
+        "name":"Xiaomi RedmiBook Pro 14",
+        "img":"https://www.startech.com.bd/image/cache/catalog/laptop/mi-laptop/redmibook-pro-14/redmibook-pro-14-01-500x500.jpg",
+        "price":449,
+        "description":"The Xiaomi RedmiBook Pro 14 comes with AMD Ryzen 5 5500U Processor (8M Cache, 2.1GHz up to 4.0GHz, 6 cores) and 16 GB DDR4 3200MHz RAM. It comes with a 512 GB PCIe SSD. This laptop has been integrated with AMD Radeon Graphics and has a 14 Inch (2560 × 1600) FHD, 178°, 300nits, 16:10, 100% sRGB display. It also has a full-size backlit keyboard, 1.3mm key travel, 125mm × 81.6mm, PTP trackpad.",
+        "quantity":77,
+        "supplier":"Tuhin"
+
+    }
+]
