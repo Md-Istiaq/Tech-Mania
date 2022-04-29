@@ -1,13 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../_firebase.init';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [
+      signInWithEmailAndPassword,
+      user,
+      loading,
+      error,
+    ] = useSignInWithEmailAndPassword(auth);
     
+    const Navigate = useNavigate()
 
-    const Email = () =>{
+    const Email = e =>{
+        e.preventDefault()
+        setEmail(e.target.value)
+    }
 
+    const Password = e =>{
+        e.preventDefault()
+        setPassword(e.target.value)
+    }
+
+    const Login = e =>{
+        signInWithEmailAndPassword(email,password)
+    }
+    if(error){
+        alert(error)
     }
     return (
         <div>
@@ -17,7 +41,7 @@ const Login = () => {
                  <img src="https://images.assetsdelivery.com/compings_v2/rudipranata/rudipranata2010/rudipranata201000003.jpg" alt="" srcset="" />
                 </div>
                 <div>
-                <Form className=' from mx-auto input'>
+                <Form onSubmit={Login} className=' from mx-auto input'>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control  onBlur={Email} type="email" placeholder="Enter email" />
@@ -28,7 +52,7 @@ const Login = () => {
             
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control onBlur={Password} type="password" placeholder="Password" />
               </Form.Group>
               <div className='navigationlink'>
               <Link to="/register">Don't have an account? Register</Link>
