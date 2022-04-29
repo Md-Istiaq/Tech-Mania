@@ -4,12 +4,18 @@ import './Login.css'
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    
+
+    const Email = () =>{
+
+    }
     return (
         <div>
+            <h1>Please Log In</h1>
             <Form className=' from w-50 mx-auto'>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control onBlur={Email} type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
