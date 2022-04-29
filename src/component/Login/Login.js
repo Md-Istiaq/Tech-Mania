@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -18,10 +19,11 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
-              <button className='button'>Submit</button>
+              <div className='navigationlink'>
+              <Link to="/register">Don't have an account? Register</Link>
+              <button className='button w-25 mt-2'>Submit</button>
+              </div>
+
             </Form>
         </div>
     );

@@ -1,10 +1,12 @@
 import React from 'react';
-import {Form} from 'react-bootstrap'
+import {Form} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Register.css'
 
 const Register = () => {
     return (
         <div>
-            <Form>
+            <Form className='from w-50 mx-auto'>
                <Form.Group className="mb-3" controlId="formBasicEmail">
                  <Form.Label>Email address</Form.Label>
                  <Form.Control type="email" placeholder="Enter email" />
@@ -17,10 +19,10 @@ const Register = () => {
                  <Form.Label>Password</Form.Label>
                  <Form.Control type="password" placeholder="Password" />
                </Form.Group>
-               <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                 <Form.Check type="checkbox" label="Check me out" />
-               </Form.Group>
-               <button className='button'>Submit</button>
+               <div className="navigationlink">
+               <Link to="/login">Already have an account? Log in</Link>
+               <button className='button w-25 mt-2'>Submit</button>
+               </div>
             </Form>
         </div>
     );
