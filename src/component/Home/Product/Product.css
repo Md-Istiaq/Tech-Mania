@@ -1,0 +1,18 @@
+.button{
+    background-color: white;
+    color: #890995;
+    border-radius: 8px;
+    border: 1px solid #890995;
+    letter-spacing: 2px;
+    padding: 4px;
+}
+.button:hover{
+    text-shadow: 0 0 5px #890995  , 0 0 5px #890995;
+    box-shadow: 0 0 5px #890995  , 0 0 5px #890995;
+}
+.product:hover{
+    box-shadow: 4px 4px 8px 4px #890995 , 4px 4px 8px 4px #890995;
+}
+.product{
+    box-shadow: 4px 4px 8px 4px rgb(100, 97, 97) , 4px 4px 8px 4px rgb(100, 97, 97);
+}
