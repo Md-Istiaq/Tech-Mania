@@ -12,10 +12,15 @@ const Login = () => {
     return (
         <div>
             <h1>Please Log In</h1>
-            <Form className=' from w-50 mx-auto'>
+            <div className='d-flex justify-content-evenly align-item-center'>
+                <div>
+                 <img src="https://images.assetsdelivery.com/compings_v2/rudipranata/rudipranata2010/rudipranata201000003.jpg" alt="" srcset="" />
+                </div>
+                <div>
+                <Form className=' from mx-auto input'>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control onBlur={Email} type="email" placeholder="Enter email" />
+                <Form.Control  onBlur={Email} type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
@@ -27,10 +32,14 @@ const Login = () => {
               </Form.Group>
               <div className='navigationlink'>
               <Link to="/register">Don't have an account? Register</Link>
-              <button className='button w-25 mt-2'>Submit</button>
+              <button className='button ps-4 pe-4 mt-2'>Submit</button>
               </div>
-
+              <div>
+                  <button className='button'> <img width={30} height={30} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_drVCd199yYvCPpFHn88MZ08txZR2yOcQ_g&usqp=CAU" alt="" srcset="" />  Continue with google</button>
+              </div>
             </Form>
+                </div>
+            </div>
         </div>
     );
 };
