@@ -28,7 +28,11 @@ const Login = () => {
     }
 
     const Login = e =>{
+        e.preventDefault()
         signInWithEmailAndPassword(email,password)
+    }
+    if(user){
+      Navigate('/productdetails')
     }
     if(error){
         alert(error)

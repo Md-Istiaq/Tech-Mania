@@ -30,14 +30,14 @@ const Register = () => {
     }
 
     const register = e =>{
+        e.preventDefault()
         createUserWithEmailAndPassword(email,password)
-        Navigate('/productdetails')
     }
-    if(loading){
-        toast("Creating account")
+    if(user){
+      Navigate('/productdetails')
     }
     if(error){
-        toast(error)
+        alert(error)
     }
     return (
         <div>
