@@ -6,6 +6,22 @@ import './ManageInventory.css'
 
 const ManageInventory = () => {
     const [products,setProducts] = useProduct()
+
+    const deleteItem = id =>{
+      const proceed = window.confirm("are you sure you want to delete??")
+      if(proceed){
+        const url = `http://localhost:5000/product/${id}`
+        fetch(url,{
+          method:'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+          alert("Item Deleted")
+        })
+
+      }
+
+    }
     return (
         <div>
          <div className='allitems ms-5 mb-5'>
@@ -18,7 +34,7 @@ const ManageInventory = () => {
                       <h5>Price:- ${product.price}</h5>
                       <h5>Quantity:-{product.quantity}</h5>
                       <h5>Supplier:-{product.supplier}</h5>
-                      <button className='button'> Delete Item</button>
+                      <button onClick={() => deleteItem(product._id)} className='button'> Delete Item</button>
                     </Card.Body>
                   </Card>
                     )
