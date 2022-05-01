@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useProduct from '../../hooks/useProduct';
+import useProduct from '../hooks/useProduct';
 import './ManageInventory.css'
 
 const ManageInventory = () => {
@@ -25,7 +25,7 @@ const ManageInventory = () => {
             }
          </div>
          <Link to='/additem'>
-         <button className='button'> Add new Item</button>
+         <button className='button mb-5'> Add new Item</button>
          </Link>
         </div>
     );
