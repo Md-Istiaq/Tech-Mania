@@ -77,6 +77,7 @@ const Login = () => {
               </Form.Group>
               <div className='navigationlink'>
               <Link to="/register">Don't have an account? Register</Link>
+              <p>-------or-------</p>
               <button className='button ps-4 pe-4 mt-2'>Submit</button>
               </div>
               <div>
