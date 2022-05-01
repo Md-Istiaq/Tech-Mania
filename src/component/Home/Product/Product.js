@@ -8,7 +8,7 @@ const Product = ({product}) => {
 
     const ItemDetails = id =>{
 
-            Navigate(`/inventory/${id}`)
+            Navigate(`/product/${id}`)
     }
     return (
         <div>

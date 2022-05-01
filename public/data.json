@@ -1,6 +1,5 @@
 [
     {
-        "_id":1,
         "name":"Apple MacBook Air 13.3-Inch",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/space-gray/13-inch/macbook-air-01-500x500.jpg",
         "price":1299,
@@ -10,7 +9,6 @@
 
     },
     {
-        "_id":2,
         "name":"Samsung Galaxy Book Pro 360 ",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/samsung/galaxy-book-pro-360/galaxy-book-pro-360-003-500x500.jpg",
         "price":999,
@@ -20,7 +18,6 @@
 
     },
     {
-        "_id":3,
         "name":"Dell Inspiron 15 3511 Core i5",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/dell/inspiron-15-3511/inspiron-15-3511-07-500x500.jpg",
         "price":599,
@@ -30,7 +27,6 @@
 
     },
     {
-        "_id":4,
         "name":"HP ENVY x360 Convert 13-ay1678AU",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/envy-x360-convert-13-ay1678au/envy-x360-convert-13-ay1678au-01-500x500.jpg",
         "price":799,
@@ -40,7 +36,6 @@
 
     },
     {
-        "_id":5,
         "name":"Lenovo IdeaPad Slim 3i Celeron N4020",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/slim-3i/slim-3i-001-500x500.jpg",
         "price":899,
@@ -50,7 +45,6 @@
 
     },
     {
-        "_id":6,
         "name":"Microsoft Surface Pro 8",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/microsoft/surface-pro-8/surface-pro-8-030-500x500.jpg",
         "price":599,
@@ -60,7 +54,6 @@
 
     },
     {
-        "_id":7,
         "name":"Razer Blade 14 Ryzen 9 5900HX RTX3080",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-14/blade-14-10-500x500.jpg",
         "price":1199,
@@ -70,7 +63,6 @@
 
     },
     {
-        "_id":8,
         "name":"ASUS VivoBook 15 X515EA ",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15-x515ea/vivobook-15-x515ea-05-500x500.jpg",
         "price":1099,
@@ -80,7 +72,6 @@
 
     },
     {
-        "_id":9,
         "name":"Huawei Matebook X Pro",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/huawei/matebook-x-pro/matebook-x-pro-01-500x500.jpg",
         "price":1149,
@@ -90,7 +81,7 @@
 
     },
     {
-        "_id":10,
+
         "name":"Xiaomi RedmiBook Pro 14",
         "img":"https://www.startech.com.bd/image/cache/catalog/laptop/mi-laptop/redmibook-pro-14/redmibook-pro-14-01-500x500.jpg",
         "price":449,

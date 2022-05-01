@@ -34,7 +34,7 @@ const Register = () => {
         createUserWithEmailAndPassword(email,password)
     }
     if(user){
-      Navigate('/productdetails')
+      Navigate('/inventory/:id')
     }
     if(error){
         alert(error)

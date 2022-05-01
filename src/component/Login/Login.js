@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Spinner } from 'react-bootstrap';
 import './Login.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../_firebase.init';
+import { GoogleAuthProvider , signInWithPopup} from "firebase/auth";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -14,8 +16,14 @@ const Login = () => {
       loading,
       error,
     ] = useSignInWithEmailAndPassword(auth);
+
+    const provider = new GoogleAuthProvider();
     
     const Navigate = useNavigate()
+
+    const location = useLocation()
+
+    let from = location.state?.from?.pathname || "/";
 
     const Email = e =>{
         e.preventDefault()
@@ -32,11 +40,20 @@ const Login = () => {
         signInWithEmailAndPassword(email,password)
     }
     if(user){
-      Navigate('/productdetails')
+      Navigate(from,{replace:true})
     }
     if(error){
         alert(error)
     }
+    const googleSignIn = () =>{
+      signInWithPopup(auth,provider)
+      .then(result =>{
+          Navigate('/inventory/:id');
+      })
+      .catch(error =>{
+        alert(error.massage);
+      })
+  };
     return (
         <div>
             <h1>Please Log In</h1>
@@ -63,7 +80,7 @@ const Login = () => {
               <button className='button ps-4 pe-4 mt-2'>Submit</button>
               </div>
               <div>
-                  <button className='button'> <img width={30} height={30} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_drVCd199yYvCPpFHn88MZ08txZR2yOcQ_g&usqp=CAU" alt="" srcset="" />  Continue with google</button>
+                  <button onClick={googleSignIn} className='button'> <img width={30} height={30} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_drVCd199yYvCPpFHn88MZ08txZR2yOcQ_g&usqp=CAU" alt="" srcset="" />  Continue with google</button>
               </div>
             </Form>
                 </div>
