@@ -77,9 +77,9 @@ const Login = () => {
               </Form.Group>
               <div className='navigationlink'>
               <Link to="/register">Don't have an account? Register</Link>
-              <p>-------or-------</p>
               <button className='button ps-4 pe-4 mt-2'>Submit</button>
               </div>
+              <p>---------------or---------------</p>
               <div>
                   <button onClick={googleSignIn} className='button'> <img width={30} height={30} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_drVCd199yYvCPpFHn88MZ08txZR2yOcQ_g&usqp=CAU" alt="" srcset="" />  Continue with google</button>
               </div>

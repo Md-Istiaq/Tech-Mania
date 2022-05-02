@@ -7,8 +7,6 @@ const ProductDetails = () => {
     const {id} = useParams()
     const [product,setProduct] = useState({}) 
     const [quantity,setQuantity] = useState(0)
-    const [newQuantity,setNewQuantity] = useState(0)
-
     
     useEffect( () =>{
         const url = `http://localhost:5000/product/${id}`
@@ -17,6 +15,12 @@ const ProductDetails = () => {
         .then(data => setProduct(data)) 
 
     },[])
+
+    const handleQuantity = quantity =>{
+        setQuantity(quantity--)
+
+    }
+
         return (
         <div>
             <div className='d-flex justify-content-evenly align-item-center mt-5'>
@@ -28,12 +32,12 @@ const ProductDetails = () => {
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <h5>Price:-${product.price}</h5>
-                    <h5>Quantity:-{product.quantity}</h5>
+                    <h5>Quantity:-{quantity}</h5>
                     <h5>Supplier:-{product.supplier}</h5>
                     <Card.Text>
                     {product.description}
                     </Card.Text>
-                    <button className='button'> Delivered</button>
+                    <button onClick={() =>handleQuantity(product.quantity)} className='button'> Delivered</button>
                   </Card.Body>
                 </Card>
                 </div>

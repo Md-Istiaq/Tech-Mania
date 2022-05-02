@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import RequirAuth from './component/RequirAuth/RequirAuth';
 import AddItems from './component/AddItems/AddItems';
 import ManageInventory from './component/ManageInventory/ManageInventory';
+import DashBoard from './component/DashBoard/DashBoard';
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
       <Route path='/additem' element={
       <RequirAuth>
         <AddItems/>
+      </RequirAuth>
+      }></Route>
+      <Route path='/oursales' element={
+      <RequirAuth>
+        <DashBoard/>
       </RequirAuth>
       }></Route>
       <Route path='/login' element={<Login/>}></Route>
