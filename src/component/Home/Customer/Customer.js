@@ -14,7 +14,7 @@ const Customer = () => {
             <div>
                 {
                     reviews.map(review => 
-                    <div class=" border-0 border-start border-5 border-danger card w-75 mb-3 mx-auto mt-5">
+                    <div class=" border-0 border-start border-end border-5 border-danger card w-75 mb-3 mx-auto mt-5">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src={review.img} class="rounded-start" height={300} width={300}  alt="" srcset="" />
