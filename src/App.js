@@ -11,6 +11,7 @@ import RequirAuth from './component/RequirAuth/RequirAuth';
 import AddItems from './component/AddItems/AddItems';
 import ManageInventory from './component/ManageInventory/ManageInventory';
 import DashBoard from './component/DashBoard/DashBoard';
+import PageNotFound from './component/404Route/PageNotFound';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       }></Route>
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/register' element={<Register/>}></Route>
+      <Route path='*' element={<PageNotFound/>}></Route>
       </Routes>
       <ToastContainer/>
     </div>
