@@ -28,12 +28,12 @@ const AddItems = () => {
                </div>
                <div className='col-6'>
                    <form className="from d-flex flex-column input" onSubmit={handleSubmit(onSubmit)}>
-                    <input placeholder='name' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("name")}  required/>
-                    <input placeholder='price' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("price")} required />
-                    <input placeholder='quantity' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("quantity")}  required/>
-                    <input placeholder='supplier' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("supplier")}  required/>
-                    <input placeholder='photo url' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("img")} required />
-                    <textarea placeholder='description' className=' input-filed ms-3 me-3 border-start border-0 border-dark border-2 rounded border-bottom mt-3 mb-3 bg-secondary bg-opacity-10' {...register("description")} />
+                    <input placeholder='name' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("name")}  required/>
+                    <input placeholder='price' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("price")} required />
+                    <input placeholder='quantity' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("quantity")}  required/>
+                    <input placeholder='supplier' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("supplier")}  required/>
+                    <input placeholder='photo url' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("img")} required />
+                    <textarea placeholder='description' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10' {...register("description")} />
                     <div className='button mt-3'><img width={40} height={40} src="https://cdn.pixabay.com/photo/2017/01/18/17/39/cloud-computing-1990405_1280.png" alt="" srcset="" /><input className='bg-white border-0 textstyle' type="submit" value="Add Item" /></div>
                   </form>
                 </div>

@@ -12,7 +12,7 @@ const Product = ({product}) => {
     }
     return (
         <div>
-            <Card className='product mt-5 '  style={{ width: '24rem' }}>
+            <Card className='product mt-5 border-2 border-dark'  style={{ width: '24rem' }}>
   <Card.Img variant="top" src={product.img} />
   <Card.Body>
     <Card.Title>{product.name}</Card.Title>

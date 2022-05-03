@@ -6,7 +6,6 @@
     text-shadow: 0 0 2px #890995  , 0 0 2px #890995;
 }
 .input-filed{
-    box-shadow: 0 0 10px 10px rgb(196, 195, 195);
-    clip-path : inset( 0 -10px -10px 0)
+    box-shadow: 0 0 5px rgb(100, 97, 97)  , 0 0 5px rgb(100, 97, 97);
 
 }

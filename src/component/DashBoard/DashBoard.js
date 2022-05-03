@@ -4,51 +4,51 @@ const DashBoard = () => {
     const data = [
         {
             "month": "jan",
-            "investment":700000,
+            "investment":1700000,
             "sell": 900000,
-            "revenue": 303060
+            "profit": 303060
         },
         {
             "month": "fab",
-            "investment":700000,
+            "investment":1700000,
             "sell": 1000000,
-            "revenue": 410470
+            "profit": 410470
         },
         {
             "month": "Mar",
-            "investment":700000,
+            "investment":1700000,
             "sell": 1300000,
-            "revenue": 520800
+            "profit": 520800
         },
         {
             "month": "Apr",
-            "investment":800000,
+            "investment":1800000,
             "sell": 1600000,
-            "revenue": 630280
+            "profit": 630280
         },
         {
             "month": "May",
-            "investment":700000,
+            "investment":2000000,
             "sell": 1350000,
-            "revenue": 467000
+            "profit": 467000
         },
         {
             "month": "Jun",
-            "investment":1200000,
+            "investment":2300000,
             "sell": 1800000,
-            "revenue": 710270
+            "profit": 710270
         },
         {
             "month": "Jul",
-            "investment":800000,
+            "investment":1800000,
             "sell": 1530000,
-            "revenue": 480200
+            "profit": 480200
         },
         {
             "month": "Aug",
-            "investment":100000,
+            "investment":1900000,
             "sell": 1700000,
-            "revenue": 570000
+            "profit": 570000
         }
     ]
     return (
@@ -65,7 +65,7 @@ const DashBoard = () => {
                 </LineChart>
            </div>
            <div>
-             <h4 className='textstyle'>Sell vs revenue</h4>
+             <h4 className='textstyle'>Sell vs profit</h4>
               <AreaChart width={730} height={250} data={data}
                   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                   <defs>
@@ -82,14 +82,14 @@ const DashBoard = () => {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  <Area type="monotone" dataKey="revenue" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+                  <Area type="monotone" dataKey="profit" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
                   <Area type="monotone" dataKey="sell" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                 </AreaChart>
            </div>
              </div>
              <div className="d-flex mt-5 justify-content-evenly">
                 <div>
-                <h4 className='textstyle'>Invesment vs revenue</h4>
+                <h4 className='textstyle'>Invesment vs profit</h4>
                 <BarChart width={730} height={250} data={data}>
                    <CartesianGrid strokeDasharray="3 3" />
                    <XAxis dataKey="month" />
@@ -97,14 +97,14 @@ const DashBoard = () => {
                    <Tooltip />
                    <Legend />
                    <Bar dataKey="investment" fill="#8884d8" />
-                   <Bar dataKey="revenue" fill="#82ca9d" />
+                   <Bar dataKey="profit" fill="#82ca9d" />
                  </BarChart>
                 </div>
                 <div>
-                <h4 className='textstyle'>Invesment vs revenue</h4>
+                <h4 className='textstyle'>Invesment vs profit</h4>
                 <PieChart width={730} height={250}>
-                   <Pie data={data} dataKey="revenue" nameKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                   <Pie data={data} dataKey="revenue" nameKey="investment" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+                   <Pie data={data} dataKey="profit" nameKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                   <Pie data={data} dataKey="profit" nameKey="investment" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                  </PieChart>
                 </div>
              </div>
