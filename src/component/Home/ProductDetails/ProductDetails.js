@@ -5,8 +5,8 @@ import { Card } from 'react-bootstrap';
 
 const ProductDetails = () => {
     const {id} = useParams()
-    const [product,setProduct] = useState({}) 
-    const [quantity,setQuantity] = useState(0)
+    const [product,setProduct] = useState({})
+    const [quantity,setQuantity] = useState(0) 
     
     useEffect( () =>{
         const url = `http://localhost:5000/product/${id}`
@@ -16,10 +16,26 @@ const ProductDetails = () => {
 
     },[])
 
-    const handleQuantity = quantity =>{
-        setQuantity(quantity--)
+    // const handleQuantity = quantity =>{
+    //     const newQuantity = parseInt(quantity) - 1
+    //     const makeQuantity = {newQuantity}
+    //     console.log(makeQuantity)
 
-    }
+    //     const url = `http://localhost:5000/product/${id}`
+    //     fetch(url ,{
+    //         method:"PUT",
+    //         headers:{
+    //             'content-type':'application/json'
+    //         },
+    //         body:  JSON.stringify(makeQuantity)
+    //     })
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log(data)
+    //         alert("Deliveard")
+    //     })
+
+    // }
 
         return (
         <div>
@@ -32,17 +48,16 @@ const ProductDetails = () => {
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <h5>Price:-${product.price}</h5>
-                    <h5>Quantity:-{quantity}</h5>
+                    <h5>Quantity:-{product.quantity}</h5>
                     <h5>Supplier:-{product.supplier}</h5>
                     <Card.Text>
                     {product.description}
                     </Card.Text>
-                    <button onClick={() =>handleQuantity(product.quantity)} className='button'> Delivered</button>
+                    <button className='button'> Delivered</button>
                   </Card.Body>
                 </Card>
                 </div>
             </div>
-           
             <Link to="/manageitem">
                 <button class="button">Manage Inventories</button>
             </Link>
