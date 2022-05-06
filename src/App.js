@@ -12,6 +12,7 @@ import AddItems from './component/AddItems/AddItems';
 import ManageInventory from './component/ManageInventory/ManageInventory';
 import DashBoard from './component/DashBoard/DashBoard';
 import PageNotFound from './component/404Route/PageNotFound';
+import MyItems from './component/MyItems/MyItems';
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
       <Route path='/oursales' element={
       <RequirAuth>
         <DashBoard/>
+      </RequirAuth>
+      }></Route>
+      <Route path='/myitems' element={
+      <RequirAuth>
+        <MyItems/>
       </RequirAuth>
       }></Route>
       <Route path='/login' element={<Login/>}></Route>

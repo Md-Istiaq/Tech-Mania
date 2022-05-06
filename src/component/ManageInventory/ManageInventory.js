@@ -24,6 +24,7 @@ const ManageInventory = () => {
     }
     return (
         <div>
+          <h1 className='textstyle mt-3 mb-2'>All Inventories</h1>
          <div className='allitems ms-5 mb-5'>
          {
                 products.map(product => 
@@ -34,6 +35,7 @@ const ManageInventory = () => {
                       <h5>Price:- ${product.price}</h5>
                       <h5>Quantity:-{product.quantity}</h5>
                       <h5>Supplier:-{product.supplier}</h5>
+                      <p>{product.description}</p>
                       <button onClick={() => deleteItem(product._id)} className='button'> Delete Item</button>
                     </Card.Body>
                   </Card>
@@ -41,7 +43,7 @@ const ManageInventory = () => {
             }
          </div>
          <Link to='/additem'>
-         <button className='button mb-5'> Add new Item</button>
+         <button className='button mt-5 mb-5'> Add new Item</button>
          </Link>
         </div>
     );

@@ -6,6 +6,7 @@ import auth from '../../_firebase.init';
 import { GoogleAuthProvider , signInWithPopup} from "firebase/auth";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ const Login = () => {
       user,
       loading,
       error,
-    ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth , {sendEmailVerification:true});
 
     const provider = new GoogleAuthProvider();
     
@@ -37,7 +38,7 @@ const Login = () => {
 
     const Login = e =>{
         e.preventDefault()
-        signInWithEmailAndPassword(email,password)
+      signInWithEmailAndPassword(email,password)
     }
     if(user){
       Navigate(from,{replace:true})

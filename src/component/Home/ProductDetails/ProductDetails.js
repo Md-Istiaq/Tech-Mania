@@ -1,5 +1,6 @@
 import React ,{useState,useEffect} from 'react';
 import useProduct from '../../hooks/useProduct';
+import { useForm } from "react-hook-form";
 import {Link , useParams} from 'react-router-dom'
 import { Card } from 'react-bootstrap';
 
@@ -16,26 +17,30 @@ const ProductDetails = () => {
 
     },[])
 
-    // const handleQuantity = quantity =>{
-    //     const newQuantity = parseInt(quantity) - 1
-    //     const makeQuantity = {newQuantity}
-    //     console.log(makeQuantity)
-
-    //     const url = `http://localhost:5000/product/${id}`
-    //     fetch(url ,{
-    //         method:"PUT",
-    //         headers:{
-    //             'content-type':'application/json'
-    //         },
-    //         body:  JSON.stringify(makeQuantity)
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data)
-    //         alert("Deliveard")
-    //     })
-
-    // }
+    const handleQuantity = e =>{
+        e.preventDefault()
+        const givenQuantity = e.target.quantity.value
+        const quantity = product.quantity
+        const newQuantity = parseInt(givenQuantity) + parseInt(quantity)
+        console.log(newQuantity)
+        
+       
+        const url = `http://localhost:5000/product/${id}`
+        fetch(url ,{
+            method:"PUT",
+            headers:{
+                'content-type':'application/json'
+            },
+            body:  JSON.stringify(newQuantity)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            alert("Deliveard")
+            e.target.reset()
+        })
+    }
+    
 
         return (
         <div>
@@ -58,6 +63,10 @@ const ProductDetails = () => {
                 </Card>
                 </div>
             </div>
+            <form onSubmit={handleQuantity}>
+                    <input placeholder='quantity' name='quantity' className=' input-filed ms-3 me-3 border-0 border-dark border-2 rounded border-dark mt-3 mb-3 bg-secondary bg-opacity-10'  required/>
+                    <input className=' button bg-white border-0 textstyle' type="submit" value="Add quanity" />
+                  </form>
             <Link to="/manageitem">
                 <button class="button">Manage Inventories</button>
             </Link>

@@ -4,13 +4,13 @@ import './Customer.css'
 const Customer = () => {
     const[reviews , setReviews] = useState([])
     useEffect( () =>{
-        fetch('review.json')
+        fetch('http://localhost:5000/review')
         .then(res => res.json())
         .then(data => setReviews(data))
     },[])
     return (
         <div>
-            <h1 className='textstyle mt-5 mb-5'>What our Customer;s say??</h1>
+            <h1 className='textstyle mt-5 mb-5'>What our Customer's say??</h1>
             <div>
                 {
                     reviews.map(review => 
@@ -21,13 +21,14 @@ const Customer = () => {
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Customer Name:-{review.name}</h5>
+                          <h3 class="card-title">{review.name}</h3>
                           <h5 class="card-title">Ratings:-{review.ratings}</h5>
-                          <p class="card-text">FeedBack:-{review.review}</p>
+                          <p class="card-text">{review.review}</p>
                         </div>
                       </div>
                     </div>
-                  </div>)
+                  </div>
+                  )
                 }
             </div>
         </div>

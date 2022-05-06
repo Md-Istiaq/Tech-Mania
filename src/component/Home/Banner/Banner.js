@@ -21,7 +21,7 @@ const Banner = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 h-50"
-      src="https://img.freepik.com/free-psd/beautiful-laptop-screen-mockup-ad-with-presentation-slides_53876-98790.jpg?t=st=1651200221~exp=1651200821~hmac=6f4fc708cd7031f7e8d725937d55fdcbac01930f412a1fd77c622a632ba08257&w=1060"
+      src="https://cdn2.f-cdn.com/contestentries/1414523/974321/5b9b47a565e42_thumb900.jpg"
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -33,7 +33,7 @@ const Banner = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 h-50"
-      src="https://cdn2.f-cdn.com/contestentries/1414523/974321/5b9b47a565e42_thumb900.jpg"
+      src="https://img.freepik.com/free-psd/beautiful-laptop-screen-mockup-ad-with-presentation-slides_53876-98790.jpg?t=st=1651200221~exp=1651200821~hmac=6f4fc708cd7031f7e8d725937d55fdcbac01930f412a1fd77c622a632ba08257&w=1060"
       alt="Third slide"
     />
     <Carousel.Caption>
