@@ -7,7 +7,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     const Navigate = useNavigate()
     const onSubmit = data => {
-        const url = `http://localhost:5000/product`
+        const url = `https://mighty-oasis-70513.herokuapp.com/product`
         fetch(url ,{
             method:'POST',
             headers:{

@@ -6,11 +6,10 @@ import { Card } from 'react-bootstrap';
 
 const ProductDetails = () => {
     const {id} = useParams()
-    const [product,setProduct] = useState({})
-    const [quantity,setQuantity] = useState(0) 
+    const [product,setProduct] = useState({}) 
     
     useEffect( () =>{
-        const url = `http://localhost:5000/product/${id}`
+        const url = `https://mighty-oasis-70513.herokuapp.com/product/${id}`
         fetch(url)
         .then(res => res.json())
         .then(data => setProduct(data)) 
@@ -19,13 +18,16 @@ const ProductDetails = () => {
 
     const handleQuantity = e =>{
         e.preventDefault()
-        const givenQuantity = e.target.quantity.value
-        const quantity = product.quantity
-        const newQuantity = parseInt(givenQuantity) + parseInt(quantity)
+        let givenQuantity = e.target.quantity.value
+        let quantity = product.quantity
+        let newQuantity = parseInt(givenQuantity) + parseInt(quantity)
         console.log(newQuantity)
+        product.quantity = newQuantity
+        console.log(product.quantity)
+
         
        
-        const url = `http://localhost:5000/product/${id}`
+        const url = `https://mighty-oasis-70513.herokuapp.com/product/${id}`
         fetch(url ,{
             method:"PUT",
             headers:{

@@ -33,7 +33,7 @@ const Banner = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 h-50"
-      src="https://img.freepik.com/free-psd/beautiful-laptop-screen-mockup-ad-with-presentation-slides_53876-98790.jpg?t=st=1651200221~exp=1651200821~hmac=6f4fc708cd7031f7e8d725937d55fdcbac01930f412a1fd77c622a632ba08257&w=1060"
+      src="https://img.freepik.com/free-vector/laptop-square-flyer-sale-social-media-instagram-post-banner-template_188201-99.jpg"
       alt="Third slide"
     />
     <Carousel.Caption>
